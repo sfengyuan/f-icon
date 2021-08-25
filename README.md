@@ -4,7 +4,7 @@
 
 ## Get started
 
-`npm install f-icon --save`
+`npm install @sunreal/f-icon --save`
 
 ### Import all icons
 ```
