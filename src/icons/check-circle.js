@@ -1,0 +1,14 @@
+const ast = ["svg",{"attrs":{"xmlns":"http://www.w3.org/2000/svg","width":"24","height":"24","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","class":"feather feather-check-circle"}},[["path",{"attrs":{"d":"M22 11.08V12a10 10 0 1 1-5.93-9.14"}},[]],["polyline",{"attrs":{"points":"22 4 12 14.01 9 11.01"}},[]]]]
+  export default {
+    install (Vue, options) {
+      Vue.component('f-check-circle', {
+        render (h) {
+          const r = ast => {
+            const [tag, attrs, children] = ast
+            return h(tag, attrs, children ? children.map(r) : [])
+          }
+          return r(ast)
+        }
+      })
+    }
+  }
