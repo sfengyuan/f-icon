@@ -9,7 +9,7 @@
 ### Import all icons
 ```
 // In js...
-import feather from 'f-icon'
+import feather from '@sunreal/f-icon'
 Vue.use(feather)
 // In vue...
 <f-icon name="align-center" />
@@ -19,7 +19,7 @@ Vue.use(feather)
 
 ```
 // In js...
-import { fAlignCenter } from 'f-icon'
+import { fAlignCenter } from '@sunreal/f-icon'
 // Each icon is a plugin...
 Vue.use(fAlignCenter)
 // In vue...

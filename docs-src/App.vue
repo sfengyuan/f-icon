@@ -35,7 +35,7 @@
           <h3>Import all icons</h3>
           <pre contenteditable="true">
             <code class="comment">// In js...</code>
-            <code>import feather from 'f-icon' </code>
+            <code>import feather from '@sunreal/f-icon' </code>
             <code>Vue.use(feather)</code>
             <code class="comment">// In vue...</code>
             <code>
@@ -47,7 +47,7 @@
           <h3>Only what you need <f-icon :name="iconSelected || 'feather'" /></h3>
           <pre contenteditable="true">
             <code class="comment">// In js...</code>
-            <code>import { {{ iconSelected | toPluginName}} } from 'f-icon'</code>
+            <code>import { {{ iconSelected | toPluginName}} } from '@sunreal/f-icon'</code>
             <code class="comment">// Each icon is a plugin...</code>
             <code>Vue.use({{ iconSelected | toPluginName}})</code>
             <code class="comment">// In vue...</code>
